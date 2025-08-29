@@ -1,0 +1,91 @@
+.App {
+  position: relative;
+  height: 300px;
+  margin: 10px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 13);
+  margin: 10px;
+}
+
+.head {
+  text-align: center;
+}
+
+.projects {
+  position: relative;
+  top: -60%;
+  left: 4%;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 70%;
+  border-radius: 10px;
+  z-index: 1;
+  text-align: center;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+.project-description {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #eee;
+  float: left;
+}
+
+.project-description,
+.project-image {
+  width: 50%;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #eee;
+  padding-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+.typing {
+  font-size: 1.5rem;
+  font-family: 'Lucida Console', monospace;
+  color: #eee;
+  padding-bottom: 10px;
+  text-align: center;
+  min-height: 35px;
+}
+
+.filing {
+  position: relative;
+  top: -60%;
+  width: 100%;
+  left: -1%;
+  margin: 10px;
+  height: 100%;
+}
+
+.introduction {
+  position: relative;
+  border: 5px solid white;
+  width: 60%;
+  height: 250px;
+  left: 20%;
+  top: -70%;
+}

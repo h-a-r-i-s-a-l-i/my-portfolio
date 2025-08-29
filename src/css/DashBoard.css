@@ -1,0 +1,80 @@
+.dashboard {
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+    height: 20px;
+    border: 1px solid rgb(26, 255, 0)
+}
+
+.spacer {
+    display: flex;
+    width: 50px;
+}
+
+.proj-title{
+    flex: 1;
+    text-align: center;
+    margin: 3px;
+    font-family: 'Lucida Console', monospace;
+}
+
+.proj-date {
+    margin: 3px;
+    font-family: 'Lucida Console', monospace;
+}
+
+.circle-1 {
+    position: relative;
+    height: 10px;
+    left: 15%;
+    width: 10px;
+    border: 1px solid red;
+    background-color: rgba(255,0,0,0.2);
+    border-radius: 50%;
+}
+
+.circle-1.glow {
+    background-color: rgba(255,0,0,1);
+    animation: beep 0.5s infinite alternate;
+}
+
+.circle-2 {
+    position: relative;
+    height: 10px;
+    left: 25%;
+    width: 10px;
+    border: 1px solid yellow;
+    background-color: rgba(0,255,255,0.2);
+    border-radius: 50%;
+}
+
+.circle-3 {
+    position: relative;
+    height: 10px;
+    left: 35%;
+    width: 10px;
+    border: 1px solid green;
+    background-color: rgba(0,255,0,0.2);
+    border-radius: 50%;
+}
+
+.proj-details {
+    height:0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.proj-details.locked {
+    border: 1px solid rgb(26, 255, 0);
+    height: 300px;
+    transition: all 0.5s;
+}
+
+@keyframes beep {
+    0% {
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+    100% {
+        background-color: rgba(255, 0, 0, 1);
+    }
+}
