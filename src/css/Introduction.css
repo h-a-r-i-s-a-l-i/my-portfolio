@@ -3,22 +3,38 @@
     height: 100%;
 }
 
-.picture {
-    position: relative;
+.intro-text {
     height: 100%;
-    width: 20%;
-    border: 2px solid green;
+}
+
+.picture {
+    height: 100%;
+    width: 40%;
     overflow: hidden;
 }
 
 .HarisPic {
     position: relative;
+    left: -23%;
     width: 300px;
-    right: 50%;
+    min-width: 250px;
     height: auto;
+    bottom: 25%;
+}
+
+@media (min-width: 375px) {
+    .HarisPic {
+        left: -132%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .HarisPic {
+        left: -23%;
+    }
 }
 
 .me {
     font-family: 'Lucida Console', monospace;
-    font-size: 1.2rem;
+    font-size: clamp(10px, 1.2rem, 30px);
 }

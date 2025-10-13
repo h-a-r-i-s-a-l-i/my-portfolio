@@ -7,6 +7,9 @@ import ChromeTabs from './Chrome-Tabs.jsx';
 import Title from './Title.jsx';
 import DashBoard from './dashboard.jsx';
 import Introduction from './Introduction.jsx';
+import MyPicture from './MyPicture.jsx';
+
+import { useRef } from 'react';
 
 
 
@@ -19,6 +22,7 @@ function App() {
         <><ChromeTabs /></>
         <div className="introduction">
           <Introduction />
+          <MyPicture />
         </div>
         <div className="filing">
           <DashBoard date="06/13/2025" />

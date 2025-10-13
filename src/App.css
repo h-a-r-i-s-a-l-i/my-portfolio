@@ -83,9 +83,9 @@ body {
 
 .introduction {
   position: relative;
-  border: 5px solid white;
-  width: 60%;
+  display: flex;
+  width: 75%;
   height: 250px;
-  left: 20%;
+  left: 28%;
   top: -70%;
 }
