@@ -1,9 +1,88 @@
-.dashboard {
+.Total-dashboard {
     display: flex;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Lucida Console', monospace;
+}
+
+.proj-select {
+    display: flex;
+    position: relative;
     justify-self: space-between;
     align-items: center;
-    height: 20px;
-    border: 1px solid rgb(26, 255, 0)
+    height: auto;
+    width: auto;
+    margin-left: 5%;
+    border: 1px solid rgb(26, 255, 0);
+}
+
+.proj-2 {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.proj-2.expand {
+    max-height: 1000px;
+}
+
+@media (max-width: 900px) {
+    .proj-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p2-info {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .components {
+        width: 95%;
+    }
+
+    .components h3 {
+        text-align: center;
+    }
+
+    .p2-info h3 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .p2-info {
+        width: 39%;
+        margin-left: 3%;
+    }
+}
+
+.spryinatorimg img {
+    border-radius: 12px;
+    margin: 5px 20px 5px 10px;
+    width: 275px;
+    height: auto;
+}
+
+
+
+.proj-select.current {
+    background-color: rgb(6, 45, 2);
+}
+
+.proj-select:hover {
+    background-color: rgb(9, 76, 2);
+}
+
+.proj-info {
+    margin-left: 4px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
 }
 
 .spacer {
@@ -11,7 +90,7 @@
     width: 50px;
 }
 
-.proj-title{
+.proj-title {
     flex: 1;
     text-align: center;
     margin: 3px;
@@ -23,18 +102,30 @@
     font-family: 'Lucida Console', monospace;
 }
 
+.components {
+    font-family: 'Lucida Console', monospace;
+}
+
+
+
+.p2-info {
+    font-family: 'Lucida Console', monospace;
+}
+
+
+
 .circle-1 {
     position: relative;
     height: 10px;
     left: 15%;
     width: 10px;
     border: 1px solid red;
-    background-color: rgba(255,0,0,0.2);
+    background-color: rgba(255, 0, 0, 0.2);
     border-radius: 50%;
 }
 
 .circle-1.glow {
-    background-color: rgba(255,0,0,1);
+    background-color: rgba(255, 0, 0, 1);
     animation: beep 0.5s infinite alternate;
 }
 
@@ -44,7 +135,7 @@
     left: 25%;
     width: 10px;
     border: 1px solid yellow;
-    background-color: rgba(0,255,255,0.2);
+    background-color: rgba(0, 255, 255, 0.2);
     border-radius: 50%;
 }
 
@@ -54,17 +145,17 @@
     left: 35%;
     width: 10px;
     border: 1px solid green;
-    background-color: rgba(0,255,0,0.2);
+    background-color: rgba(0, 255, 0, 0.2);
     border-radius: 50%;
 }
 
 .proj-details {
-    height:0px;
+    height: 0px;
     overflow: hidden;
     transition: all 0.5s;
 }
 
-.proj-details.locked {
+.proj-details.preview {
     border: 1px solid rgb(26, 255, 0);
     height: 300px;
     transition: all 0.5s;
@@ -74,6 +165,7 @@
     0% {
         background-color: rgba(255, 0, 0, 0.2);
     }
+
     100% {
         background-color: rgba(255, 0, 0, 1);
     }

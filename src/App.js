@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import HeroStatement from './HeroStatement.jsx';
 import Project from './Project.jsx';
-import sprayinatorImg from './assets/Sprayinator.jpg';
 import ChromeTabs from './Chrome-Tabs.jsx';
 import Title from './Title.jsx';
 import DashBoard from './dashboard.jsx';
 import Introduction from './Introduction.jsx';
 import MyPicture from './MyPicture.jsx';
+import Skills from './Skills.jsx';
 
 import { useRef } from 'react';
 
@@ -25,8 +25,10 @@ function App() {
           <MyPicture />
         </div>
         <div className="filing">
-          <DashBoard date="06/13/2025" />
-          <DashBoard title="Operation: Sprayinator" />
+          <DashBoard />
+        </div>
+        <div>
+
         </div>
       </div>
     </body>
